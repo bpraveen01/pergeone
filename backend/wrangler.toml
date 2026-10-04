@@ -1,0 +1,11 @@
+name = "pergeone-contact"
+main = "worker.js"
+compatibility_date = "2024-11-01"
+
+[vars]
+TO_EMAIL = "bpraveenbabu01@gmail.com"
+FROM_EMAIL = "PergeOne Website <onboarding@resend.dev>"
+ALLOWED_ORIGIN = "https://YOUR-USERNAME.github.io,http://localhost:3000"
+LOGO_URL = "https://YOUR-USERNAME.github.io/pergeone/logo/logo.png"
+TIMEZONE = "Asia/Kolkata"
+# RESEND_API_KEY is a SECRET: never put it in this file. Set it in the Cloudflare dashboard.
