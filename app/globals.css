@@ -139,3 +139,27 @@ a.card{display:block}.svc .wrap{align-items:start}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 @keyframes plIn{to{opacity:1}}@keyframes plOut{to{opacity:0;visibility:hidden}}
 @media(prefers-reduced-motion:reduce){.pl,.form-busy{animation:plIn .01s linear 250ms forwards!important}.pl-full{animation:plIn .01s linear 250ms forwards,plOut .01s linear 6s forwards!important}.pl-full.out{animation:none!important;opacity:0}.lg img,.lg i{animation:none!important}.lg i{display:none}}
+
+
+/* ===== MOBILE FIXES v5 (tablet and phone only; desktop is unchanged) ===== */
+html.lock,html.lock body{overflow:hidden}
+.scrim{display:none}
+@media(max-width:1023px){
+  header.open{background:#fff;box-shadow:0 1px 0 var(--line)}
+  .scrim{display:block;position:fixed;inset:0;z-index:40;background:rgba(7,27,51,.4)}
+  .drawer{max-height:calc(100vh - 76px);max-height:calc(100dvh - 76px);overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+  .drawer a.btn{display:flex;justify-content:center;text-align:center}
+  .hero .wrap{padding-bottom:368px}
+  .hero .cta{flex-direction:column;align-items:flex-start;gap:6px}
+  .hero .cta .btn.ghost{padding:10px 0}
+  .phero{padding:112px 0 40px}
+  section{padding:60px 0}
+  .sv{padding:52px 0}
+  .ft{flex-direction:column;align-items:flex-start;gap:18px}
+  .ft nav{gap:10px 22px}
+  .bt{flex-direction:column;gap:4px}
+}
+@media(max-width:640px){
+  .hero .wrap{padding-bottom:328px}
+  section{padding:52px 0}
+}
