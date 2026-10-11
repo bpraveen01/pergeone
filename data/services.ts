@@ -38,6 +38,16 @@ export const SERVICES: Service[] = [
       ["Process Automation", "Turn multi-step manual processes into reliable automated ones, with clear checks along the way."],
       ["Custom Scripts", "Small, focused scripts that connect your tools, move data and handle routine jobs."],
       ["Workflow Automation", "Automated workflows for approvals, notifications and hand-offs between people and systems."]] },
+    { slug: "documentation", icon: "doc", title: "Documentation", tagline: "Clear documents for every audience",
+    intro: "Good work needs good documents. We write and design the material that explains your product, your process and your plans, so the people who read it can understand it and act on it.",
+    offerings: [
+      ["Presentations (PPT)", "Clear, well-structured slide decks for pitches, company profiles, training sessions and client updates."],
+      ["PDF Documents", "Polished PDFs such as proposals, brochures, reports and guides, laid out so they are easy to read and share."],
+      ["Word Documents", "Editable documents for policies, procedures, templates and everyday business use, kept consistent and easy to update."],
+      ["Technical Documentation", "Architecture notes, API references, setup and deployment guides, test documents and runbooks for your engineering team."],
+      ["User Documentation", "Manuals, how-to guides and FAQs written in plain language, so your users can get started without waiting for help."],
+      ["Project Documentation", "Scope and requirement documents, project plans, status reports and hand-over packs that keep everyone aligned."],
+      ["User Role Guides", "Role-based guides that explain who can do what in your product, with step-by-step help for each type of user."]] },
   { slug: "support-maintenance", icon: "heart", title: "Support & Maintenance", tagline: "We stay after launch",
     intro: "Launch is a milestone, not the finish line. We keep your product healthy, answer your questions and keep improving it as your needs change.",
     offerings: [

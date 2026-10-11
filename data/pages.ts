@@ -1,5 +1,6 @@
 // Text for the inner pages (Services, Our Approach, What We're Building, Contact).
 export const PAGES = {
+  about: { eyebrow: "ABOUT US", title: "A small team that", em: "stays with you.", text: "PergeOne is a remote-first technology company led by four directors. We turn ideas into working products, and we stay involved long after launch." },
   services: { eyebrow: "SERVICES", title: "End-to-end digital solutions", em: "for your ideas.", text: "From websites and apps to AI, cloud, automation, quality assurance and ongoing support, PergeOne helps take ideas from concept to continued improvement." },
   approach: { eyebrow: "OUR APPROACH", title: "From idea to reality", em: "and beyond.", text: "A clear, transparent process that keeps you informed at every step, and keeps us involved after launch." },
   building: { eyebrow: "WHAT WE'RE BUILDING", title: "Turning ideas into", em: "products & possibilities.", text: "We are a service company, and we are also building our own products, because we believe in creating solutions that make a difference." },

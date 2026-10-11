@@ -33,12 +33,12 @@ export default function Navbar() {
             <Link key={s.slug} className="mi" href={`/services#${s.slug}`} onClick={close}><span className="ic"><Icon n={s.icon} /></span><span><b>{s.title}</b><small>{s.tagline}</small></span></Link>))}</div>
             <Link className="mall" href="/services" onClick={close}>View all services →</Link></div></div></div>
       ) : <Link key={h} href={h} className={on(h) ? "on" : ""}>{t}</Link>)}</nav>
-      <Link className="btn" href="/contact">{C.navCta}</Link>
+      <Link className="btn" href="/login">{C.navCta}</Link>
       <button className="burger" aria-label="Toggle menu" aria-expanded={open} aria-controls="mobile-menu" onClick={() => setOpen(!open)}>
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M4 7h16M4 12h16M4 17h16" /></svg></button></div>
       <div id="mobile-menu" className={"drawer" + (open ? " open" : "")}>{C.nav.map(([t, h]: string[]) => (<div key={h}><Link href={h} onClick={() => setOpen(false)}>{t}</Link>
         {h === "/services" && <div className="sub">{SERVICES.map((s) => <Link key={s.slug} href={`/services#${s.slug}`} onClick={() => setOpen(false)}>{s.title}</Link>)}</div>}</div>))}
-        <Link className="btn" href="/contact" onClick={() => setOpen(false)}>{C.navCta}</Link></div></div></header>
+        <Link className="btn" href="/login" onClick={() => setOpen(false)}>{C.navCta}</Link></div></div></header>
     {open && <div className="scrim" onClick={() => setOpen(false)} aria-hidden="true" />}
   </>);
 }

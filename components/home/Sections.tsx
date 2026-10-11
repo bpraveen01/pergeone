@@ -3,15 +3,16 @@ import { asset } from "@/lib/asset";
 import Icon from "@/components/ui/Icon";
 import Link from "next/link";
 import ContactForm from "@/components/contact/ContactForm";
+import HeroVideo from "@/components/home/HeroVideo";
 const d = (i: number) => ({ "--i": i } as any);
 
 export function Hero() { const h = C.hero; return (
   <section className="hero" id="home">
-    <img className="herobg" src={asset("/images/hero-bg.jpg")} alt="" aria-hidden="true" />
+    <HeroVideo />
     <div className="herofade" aria-hidden="true" />
     <div className="wrap"><div className="copy">
       <p className="eyebrow rise" style={d(1)}>{h.eyebrow}</p>
-      <h1 className="rise" style={d(2)}>{h.pre}<br /><em>{h.em}</em></h1>
+      <h1 aria-label={h.pre + " " + h.em}>{h.pre.split(" ").map((w: string, i: number) => <span key={i} className="w" aria-hidden="true" style={{ "--w": i } as any}><span>{w}</span></span>).reduce((a: any[], x: any, i: number) => (i ? [...a, " ", x] : [x]), [])}{" "}<em className="w" aria-hidden="true" style={{ "--w": h.pre.split(" ").length } as any}><span>{h.em}</span></em></h1>
       <p className="lead rise" style={d(3)}>{h.text}</p>
       <div className="cta rise" style={d(4)}><Link className="btn" href="/contact">{h.cta1}</Link><Link className="btn ghost" href="/services">{h.cta2}</Link></div></div></div></section>); }
 
