@@ -7,7 +7,7 @@ export const SITE_DESCRIPTION = "PergeOne turns ideas into reality: websites, ap
 
 // Search + sharing text for every page. Edit the sentences here.
 export const PAGE_SEO = {
-  about: { title: "About Us", description: "PergeOne is a remote-first team of three founders who turn ideas into dependable technology and stay involved long after launch.", path: "/about/" },
+  about: { title: "About Us", description: "PergeOne is a remote-first team led by four directors who turn ideas into dependable technology and stay involved long after launch.", path: "/about/" },
   services: { title: "Services", description: "Websites, web and mobile apps, AI solutions, QA testing, cloud and DevOps, business automation, documentation and ongoing support from PergeOne.", path: "/services/" },
   approach: { title: "Our Approach", description: "How PergeOne works: understand, plan, build, test, launch and sustain, with clear communication and long-term support.", path: "/approach/" },
   building: { title: "What We're Building", description: "PergeOne is a service company and also a product builder. See what we are creating and where we are heading.", path: "/building/" },

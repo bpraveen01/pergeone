@@ -32,7 +32,7 @@ export default function ContactForm() {
       if (r.ok) setSt("done"); else { setFailMsg(r.error || ""); setSt("fail"); }
     } catch { setFailMsg(""); setSt("fail"); }
   }
-  if (st === "done") return (<div className="form"><div className="ok" role="status"><span className="ic" style={{ margin: "auto", background: "#e6faf6", color: "#0a8f7f" }}><Icon n="shield" /></span><h3>Message sent</h3><p>Thanks for sharing your idea. We'll get back to you soon.</p></div></div>);
+  if (st === "done") return (<div className="form"><div className="ok" role="status"><span className="ic" style={{ margin: "auto", background: "#e6faf6", color: "#0a8f7f" }}><Icon n="shield" /></span><h3>Message sent</h3><p>Thanks for sharing your idea. A confirmation is on its way to your inbox, and we'll get back to you soon.</p></div></div>);
   return (<form className="form" onSubmit={submit} noValidate>
     {F.map(([id, label, type, ph, full]) => (<div key={id} className={"fld " + full}><label htmlFor={id}>{label} *</label>
       {type === "select" ? <select id={id} value={v[id]} aria-invalid={!!e[id]} onChange={(x) => set(id, x.target.value)}><option value="">Select your role</option>{C.contact.roles.map((r: string) => <option key={r}>{r}</option>)}</select>

@@ -20,12 +20,12 @@ export const ABOUT = {
     eyebrow: "LEADERSHIP",
     heading: "Four directors. One shared direction.",
     text: "Every project has a named owner at each stage. Our roles are clear, so you always know who is responsible for what, and who to speak to.",
-    members: [
-      { code: "Mr. AK", role: "CEO & Managing Director", line: "Sets the direction of the company and keeps every commitment we make sound and sustainable.", focus: ["Strategy", "Finance", "Legal", "Infrastructure architecture", "Final decisions"], photo: "" },
-      { code: "Mr. PB", role: "Chief Product Officer (CPO)", line: "Owns the quality of what you see and use, from the first screen to the final test.", focus: ["Service quality", "Frontend and UI", "Presentations", "Testing and QA", "Client-facing demos"], photo: "" },
-      { code: "Mr. RSR", role: "Chief Technology Officer (CTO)", line: "Designs and builds the technology underneath, and steps in when something needs deep technical attention.", focus: ["Backend", "Android", "Technical design", "Troubleshooting escalations"], photo: "" },
-      { code: "Mr. BM", role: "Chief Operating Officer (COO), Technical Operations", line: "Keeps delivery running smoothly, and keeps your product healthy after it goes live.", focus: ["Delivery operations", "Dashboards", "Support and maintenance", "DevOps", "SOPs"], photo: "" },
-    ] as { code: string; role: string; line: string; focus: string[]; photo: string }[],
+        members: [
+      { code: "Mr. AK", role: "CEO & Managing Director", line: "Sets the direction of the company and keeps every commitment we make sound and sustainable.", photo: "" },
+      { code: "Mr. PB", role: "Chief Product Officer (CPO)", line: "Owns the quality of what you see and use, from the first screen to the final test.", photo: "" },
+      { code: "Mr. RSR", role: "Chief Technology Officer (CTO)", line: "Designs and builds the technology underneath, and steps in when something needs deep technical attention.", photo: "" },
+      { code: "Mr. BM", role: "Chief Operating Officer (COO), Technical Operations", line: "Keeps delivery running smoothly, and keeps your product healthy after it goes live.", photo: "" },
+    ] as { code: string; role: string; line: string; photo: string }[],
   },
   purpose: {
     eyebrow: "PURPOSE",

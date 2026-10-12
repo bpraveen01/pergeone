@@ -729,3 +729,17 @@ header .wrap, .hero .wrap { max-width: 1320px; }
 .tfocus li { padding: 6px 12px; border-radius: 999px; font-size: 13px; font-weight: 600; color: var(--text2); background: #fff; box-shadow: inset 0 0 0 1px var(--line); }
 @media (max-width: 1199px) { .tgrid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 640px) { .tgrid { grid-template-columns: 1fr; } .tm { padding: 24px; } }
+
+
+/* 22g. FIXES + SOCIAL ICONS + ANIMATED "ENTER" BUTTON */
+@media (min-width: 1024px) { ol.steps { padding: 0; } }
+.fright a.soc { background: rgba(255, 255, 255, 0.08); color: #fff; transition: background 0.4s var(--ease), transform 0.5s var(--ease); }
+.fright a.soc:hover { background: var(--brand); transform: translateY(-3px); }
+@keyframes tiltbob { 0%, 100% { translate: 0 0; rotate: 0deg; } 25% { translate: 0 -3px; rotate: -1.8deg; } 50% { translate: 0 0; rotate: 0deg; } 75% { translate: 0 3px; rotate: 1.8deg; } }
+@keyframes tilt { 0%, 100% { rotate: 0deg; } 25% { rotate: -1.2deg; } 75% { rotate: 1.2deg; } }
+@keyframes sweep { 0%, 55% { left: -60%; } 80%, 100% { left: 130%; } }
+.nav > .btn { animation: tiltbob 3.6s ease-in-out infinite; }
+.nav > .btn::before { animation: sweep 4.5s ease-in-out infinite; }
+.drawer a.btn { animation: tilt 3.6s ease-in-out infinite; }
+.nav > .btn:hover, .drawer a.btn:hover { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) { .nav > .btn, .nav > .btn::before, .drawer a.btn { animation: none; } }

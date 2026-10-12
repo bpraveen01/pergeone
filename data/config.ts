@@ -3,7 +3,7 @@ export const CONFIG: any = {
  name:"PergeOne",tagline:"From First Thought to Lasting Impact.",
  contactEmail:"pergeone@gmail.com", // company email: shown on the Contact section, Contact page and footer
  formEndpoint:"", // TODO: set your form provider / API URL later
- social:{linkedin:"",github:"",x:"",email:""}, // leave empty until you have URLs
+ social:{linkedin:"",facebook:"",youtube:"",email:""}, // paste the real page links here later; empty = dummy icon
  nav:[["Home","/"],["About Us","/about"],["Services","/services"],["Our Approach","/approach"],["What We're Building","/building"],["Contact","/contact"]],
  navCta:"Enter PergeOne",
  hero:{eyebrow:"IDEAS / PRODUCTS / LONG-TERM SUPPORT",pre:"We turn ideas into",em:"reality.",text:"From concept to creation — and beyond. We build, test, maintain, and support digital products that grow with you.",cta1:"Let's bring your idea to reality",cta2:"Explore our services",hand:"Big dreams.<br>Real solutions."},

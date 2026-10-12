@@ -26,7 +26,7 @@ export function About() { return (
 
 export function Approach() { return (
   <section id="approach"><div className="wrap"><p className="eyebrow">OUR APPROACH</p><h2>{C.approach.heading}</h2>
-    <ol className="steps" style={{ listStyle: "none", padding: 0 }}>{C.approach.steps.map(([t, p]: string[], i: number) => <li key={t} className="st"><span className="n">0{i + 1}</span><h3>{t}</h3><p>{p}</p></li>)}</ol><div className="sec-cta"><Link className="btn" href="/approach">Explore our full approach</Link></div></div></section>); }
+    <ol className="steps" style={{ listStyle: "none" }}>{C.approach.steps.map(([t, p]: string[], i: number) => <li key={t} className="st"><span className="n">0{i + 1}</span><h3>{t}</h3><p>{p}</p></li>)}</ol><div className="sec-cta"><Link className="btn" href="/approach">Explore our full approach</Link></div></div></section>); }
 
 export function Building() { const b = C.building; return (
   <section className="build" id="building"><div className="wrap"><p className="eyebrow">WHAT WE'RE BUILDING</p><h2>{b.heading}</h2><p style={{ color: "var(--text2)", maxWidth: 560 }}>{b.text}</p>

@@ -25,8 +25,7 @@ export default function AboutPage() {
     <section className="team"><div className="wrap"><p className="eyebrow">{A.team.eyebrow}</p><h2>{A.team.heading}</h2><p className="sum">{A.team.text}</p>
       <ul className="tgrid">{A.team.members.map((m) => <li key={m.code} className="tm">
         <div className="tav">{m.photo ? <img src={m.photo} alt={m.code} /> : <span>{m.code.replace("Mr. ", "")}</span>}</div>
-        <h3>{m.code}</h3><p className="trole">{m.role}</p><p className="tline">{m.line}</p>
-        <ul className="tfocus">{m.focus.map((f) => <li key={f}>{f}</li>)}</ul></li>)}</ul></div></section>
+        <h3>{m.code}</h3><p className="trole">{m.role}</p><p className="tline">{m.line}</p></li>)}</ul></div></section>
 
     <section className="dark mv"><div className="wrap"><p className="eyebrow">{A.purpose.eyebrow}</p><h2>{A.purpose.heading}</h2>
       <div className="mvgrid">{A.purpose.items.map(([k, v]) => <div key={k} className="mvc"><span className="mvk">{k}</span><p>{v}</p></div>)}</div></div></section>
