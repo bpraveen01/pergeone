@@ -2,7 +2,7 @@
 export const CONFIG: any = {
  name:"PergeOne",tagline:"From First Thought to Lasting Impact.",
  contactEmail:"pergeone@gmail.com", // company email: shown on the Contact section, Contact page and footer
- formEndpoint:"", // TODO: set your form provider / API URL later
+ formEndpoint:"https://script.google.com/macros/s/AKfycbzLEsR9Ax2pFWTh-IobfxiH3dBJ6Uw2_RT18tugzohUgHVKYC9laOH5GITC_cPR_4VZ/exec", // web app url - for google sheet script for form.
  social:{linkedin:"",facebook:"",youtube:"",email:""}, // paste the real page links here later; empty = dummy icon
  nav:[["Home","/"],["About Us","/about"],["Services","/services"],["Our Approach","/approach"],["What We're Building","/building"],["Contact","/contact"]],
  navCta:"Enter PergeOne",
